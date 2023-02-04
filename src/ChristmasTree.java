@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ChristmasTree {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -8,15 +9,17 @@ public class ChristmasTree {
         int y = lines;
 
         for (int i = 0; i < lines; i++) {
+
             for (int j = y; j > 0; j--) {
                 System.out.print(" ");
             }
 
-            for (int a = 2*y+1; a <= x && a >= 0; a += 2) {
+            for (int a = 2 * y + 1; a <= x && a >= 0; a += 2) {
                 System.out.print("*");
             }
+
             y--;
-            x+=2;
+            x += 2;
             System.out.println();
         }
     }
